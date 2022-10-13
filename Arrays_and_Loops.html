@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Arrays and Loops</title>
+</head>
+
+<body>
+    <h2>JavaScript Array</h2>
+    <ul id="list">
+        <li>BMW</li>
+        <li>Audi</li>
+        <li>Scoda</li>
+        <li>Benz</li>
+    </ul>
+    <script>
+         var items = document.querySelectorAll("list li"),
+                tab = [], index;
+        for(var i = 0; i < items.length; i++){
+           tab.push(items[i].innerHTML);
+         }
+        for(var i = 0; i < items.length; i++)
+        {
+            items[i].onclick = function(){
+               
+               index = tab.indexOf(this.innerHTML);
+               console.log(result);
+        
+            };
+        }
+    </script>
+</body>
+
+</html>
